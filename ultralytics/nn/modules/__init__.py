@@ -106,6 +106,8 @@ from .transformer import (
     TransformerLayer,
 )
 
+from .cbam import CBAM
+
 __all__ = (
     "AIFI",
     "C1",
@@ -124,6 +126,7 @@ __all__ = (
     "SPP",
     "SPPELAN",
     "SPPF",
+    "CBAM",
     "A2C2f",
     "AConv",
     "ADown",
