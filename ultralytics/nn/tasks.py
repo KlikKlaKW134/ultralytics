@@ -1713,6 +1713,10 @@ def parse_model(d, ch, verbose=True):
             args = [c1, c2, *args[1:]]
         elif m is CBFuse:
             c2 = ch[f[-1]]
+        elif m is CBAM:            # ← TAMBAHKAN INI
+            c1 = ch[f]
+            c2 = c1
+            args = [c1]
         elif m in frozenset({TorchVision, Index}):
             c2 = args[0]
             c1 = ch[f]
